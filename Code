@@ -1,0 +1,13 @@
+//CODE: - 
+
+#define irSensor = 2; 
+#define relay = 13;     
+void setup() {
+  pinMode (irSensor, INPUT); 
+  pinMode (relay, OUTPUT);}
+void loop() {
+  int sensorValue = digitalRead (irSensor); 
+  if (sensorValue ==0)
+    {digitalWrite(relay,HIGH); 
+    delay(1000);}
+   else{ digitalWrite(relay,LOW);    }}
